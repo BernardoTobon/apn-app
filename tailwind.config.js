@@ -25,6 +25,7 @@ module.exports = {
         '5xl': '20px 20px 50px rgba(0, 0, 0, 0.5)',
       },
       fontFamily:{
+        'russo-one' : ['russo-one'],
         'poppins': ['Poppins', 'sans-serif']
       }
     },
