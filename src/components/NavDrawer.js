@@ -5,7 +5,7 @@ export default function NavDrawer({ children }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="flex ">
-      <div className="absolute" onClick={() => setIsOpen(true)}>
+      <div className="absolute z-20" onClick={() => setIsOpen(true)}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -93,7 +93,7 @@ export default function NavDrawer({ children }) {
                   </Link>
                 </div>
                 <div>
-                  <Link className="flex items-center gap-7" href={"/Calendar"}>
+                  <Link className="flex items-center gap-7" href={"/calendar"}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
