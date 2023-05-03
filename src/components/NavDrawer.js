@@ -62,7 +62,7 @@ export default function NavDrawer({ children }) {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6 hover:animate-spin "
+                      className="w-6 h-6 hover:animate-bounce "
                     >
                       <path
                         strokeLinecap="round"
@@ -81,7 +81,7 @@ export default function NavDrawer({ children }) {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6"
+                      className="w-6 h-6 hover:animate-spin"
                     >
                       <path
                         strokeLinecap="round"
@@ -100,7 +100,7 @@ export default function NavDrawer({ children }) {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6"
+                      className="w-6 h-6 hover:animate-bounce"
                     >
                       <path
                         strokeLinecap="round"
@@ -122,7 +122,7 @@ export default function NavDrawer({ children }) {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6"
+                      className="w-6 h-6 hover:animate-bounce"
                     >
                       <path
                         strokeLinecap="round"
@@ -141,7 +141,7 @@ export default function NavDrawer({ children }) {
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6"
+                      className="w-6 h-6 hover:animate-bounce"
                     >
                       <path
                         strokeLinecap="round"
