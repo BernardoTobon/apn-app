@@ -26,21 +26,23 @@ function Recipe() {
   };
 
   return (
-    <div className=" bg-light-green h-screen">
-      <h1 className="flex justify-center font-russo-one font-bold text-dark-green text-4xl ">
+    <div className="bg-light-green h-screen overflow-auto">
+      <h1 className="m-3 flex justify-center font-extrabold  text-transparent text-5xl bg-clip-text bg-gradient-to-r from-light-brown to-dark-green ">
         MIS RECETAS
       </h1>
-      <div className="flex flex-col gap-1">
-        <div className="grid grid-cols-3 overflow-auto max-h-96 gap-1">
+      <div className="flex flex-col ">
+        <div className="grid grid-cols-1 md:grid-cols-3 overflow-auto max-h-[620px] gap-1 border border-black">
           {savedData.map((data, index) => (
-            <div className="overflow-hidden  " key={index}>
+            <div className="" key={index}>
+              <div className="flex justify-center">
               <img
-                className="h-80 border border-2 border-dark-green m-3"
+                className="m-4 h-[50vw] w-[60vw] md:h-80 border border-2 border-dark-green "
                 src={data.image && URL.createObjectURL(data.image)}
-                alt={`Imagen `}
+                alt={`Imagen`}
               />
+              </div>
               <p
-                className="m-3 bg-tea-green w-50 h-20 text-left"
+                className="p-1 m-2 bg-tea-green w-30 h-30 text-left overflow-auto border-2 border-light-brown"
                 style={{
                   overflowWrap: "break-word",
                   wordWrap: "break-word",
@@ -53,15 +55,15 @@ function Recipe() {
             </div>
           ))}
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="   flex flex-col h-[40vw] md:h-[15vw] gap-2">
           <input type="file" onChange={handleFileInputChange} />
           <textarea
-            className="border border-2 border-dark-green  "
+            className="border border-2 border-dark-green m-2 "
             value={text}
             onChange={handleTextChange}
           />
           <button
-            className="bg-dark-green text-light-green border border-2 border-dark-green rounded-full w-[30vw] md:w-[15vw]"
+            className=" bg-dark-green text-light-green border border-2 border-dark-green rounded-full w-[30vw] md:w-[15vw]"
             onClick={handleSave}
           >
             Guardar
