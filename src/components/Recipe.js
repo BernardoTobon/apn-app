@@ -35,11 +35,21 @@ function Recipe() {
           {savedData.map((data, index) => (
             <div className="overflow-hidden  " key={index}>
               <img
-                className="h-80 border border-2 border-dark-green"
+                className="h-80 border border-2 border-dark-green m-3"
                 src={data.image && URL.createObjectURL(data.image)}
                 alt={`Imagen `}
               />
-              <div className="m-3 bg-tea-green w-50  h-20 text-left ">{data.text}</div>
+              <p
+                className="m-3 bg-tea-green w-50 h-20 text-left"
+                style={{
+                  overflowWrap: "break-word",
+                  wordWrap: "break-word",
+                  msWordBreak: "break-all",
+                  wordBreak: "break-word",
+                }}
+              >
+                {data.text}
+              </p>
             </div>
           ))}
         </div>
