@@ -26,17 +26,17 @@ function Recipe() {
   };
 
   return (
-    <div className="bg-light-green h-screen overflow-auto">
+    <div className="bg-light-green h-screen overflow-scroll">
       <h1 className="m-3 flex justify-center font-extrabold  text-transparent text-5xl bg-clip-text bg-gradient-to-r from-light-brown to-dark-green ">
         MIS RECETAS
       </h1>
       <div className="flex flex-col ">
-        <div className="grid grid-cols-1 md:grid-cols-3 overflow-auto max-h-[620px] gap-1 border border-black">
+        <div className="grid grid-cols-1 md:grid-cols-3 overflow-auto max-h-[620px] gap-1 border border-[1vw] md:border-[0.5vw] rounded-lg border-fluorescent-green">
           {savedData.map((data, index) => (
-            <div className="" key={index}>
+            <div className="m-2" key={index}>
               <div className="flex justify-center">
               <img
-                className="m-4 h-[50vw] w-[60vw] md:h-80 border border-2 border-dark-green "
+                className=" h-[50vw] w-[60vw] md:h-80 md:w-96 border border-2 border-dark-green "
                 src={data.image && URL.createObjectURL(data.image)}
                 alt={`Imagen`}
               />
@@ -55,7 +55,7 @@ function Recipe() {
             </div>
           ))}
         </div>
-        <div className="   flex flex-col h-[40vw] md:h-[15vw] gap-2">
+        <div className="m-2 flex flex-col h-[40vw] md:h-[15vw] gap-2">
           <input type="file" onChange={handleFileInputChange} />
           <textarea
             className="border border-2 border-dark-green m-2 "
@@ -63,7 +63,7 @@ function Recipe() {
             onChange={handleTextChange}
           />
           <button
-            className=" bg-dark-green text-light-green border border-2 border-dark-green rounded-full w-[30vw] md:w-[15vw]"
+            className="ml-[30vw] md:ml-[40vw] bg-dark-green text-light-green border border-2 border-dark-green rounded-full w-[30vw] md:w-[15vw]"
             onClick={handleSave}
           >
             Guardar
