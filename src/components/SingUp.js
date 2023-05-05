@@ -35,6 +35,13 @@ const AddUsers = () => {
                     <label className="flex justify-center">Cedula</label>
                     <input className="border-2 border-black rounded-full text-center" type="text" required/>
                 </div>
+                <div className="flex flex-col p-8 border-solid ">
+                    <label className="flex justify-center">Genero</label>
+                    <select>
+                        <option>Hombre</option>
+                        <option>Mujer</option>
+                    </select>
+                </div>
             </div>
             <div className="flex justify-center">
                     
