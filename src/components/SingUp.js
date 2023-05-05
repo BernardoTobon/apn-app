@@ -13,30 +13,34 @@ const AddUsers = () => {
 
                 <div className="flex flex-col p-8">
                     <label className="flex justify-center">Nombre</label>
-                    <input className="border-2 border-black rounded-full" type="text" required />
+                    <input className="border-2 border-black rounded-full text-center" type="text" required />
                 </div>
                 <div className="flex flex-col p-8 border-solid">
                     <label className="flex justify-center">Primer Apellido</label>
-                    <input className="border-2 border-black rounded-full" type="text" required/>
+                    <input className="border-2 border-black rounded-full text-center" type="text" required/>
                 </div>
                 <div className="flex flex-col p-8 border-solid ">
                     <label className="flex justify-center">Segundo Apellido</label>
-                    <input className="border-2 border-black rounded-full" type="text" required />
+                    <input className="border-2 border-black rounded-full text-center" type="text" required />
                 </div>
                 <div className="flex flex-col p-8 border-solid ">
                     <label className="flex justify-center">Celular</label>
-                    <input className="border-2 border-black rounded-full" type="text" required/>
+                    <input className="border-2 border-black rounded-full text-center" type="text" required/>
                 </div>
                 <div className="flex flex-col p-8 border-solid ">
                     <label className="flex justify-center">Email</label>
-                    <input className="text-center border-2 border-black rounded-full" type="email" required/>
+                    <input className="text-center border-2 border-black rounded-full text-center" type="email" required/>
                 </div>
                 <div className="flex flex-col p-8 border-solid ">
                     <label className="flex justify-center">Cedula</label>
-                    <input className="border-2 border-black rounded-full" type="text" required/>
+                    <input className="border-2 border-black rounded-full text-center" type="text" required/>
                 </div>
-                <button className="flex justify-center bg-dark-green rounded-full w-[25vw]" type="submit">AGREGAR</button>
             </div>
+            <div className="flex justify-center">
+                    
+                <button className="m-2 bg-dark-green rounded-full w-[25vw]" type="submit">AGREGAR</button>
+                
+                </div>
         </form>
         </div>
         </Accordion>
