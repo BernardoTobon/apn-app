@@ -1,8 +1,4 @@
-import Login from "@/components/Login"
-import StartHome from "@/components/Start"
-import Vid from "@/components/Vid"
-
-
+import StartHome from "@/components/Home"
 export default function Home() {
   return ( <StartHome/>
           
