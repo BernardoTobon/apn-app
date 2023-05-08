@@ -5,8 +5,8 @@ const Accordion = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={className || "border-2 border-dark-green w-50"}>
-      Agenda
+    <div className="flex justify-center">
+    <div className={className || "border-4 border-dark-green w-[80vw]"}>
       <div
         onClick={() => setIsOpen(!isOpen)}
         className="grid justify-items-end"
@@ -33,8 +33,9 @@ const Accordion = (props) => {
           isOpen ? "max-h-[500px]" : "max-h-[0px]"
         } overflow-auto transition-all duration-500 ease-in-out`}
       >
-        <div className="px-4 pb-4 bg-tea-green">{children}</div>
+        <div className="px-4 pb-4 ">{children}</div>
       </div>
+    </div>
     </div>
   );
 };
