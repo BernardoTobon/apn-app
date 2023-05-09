@@ -12,7 +12,7 @@ export default function NavDrawer({ children }) {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-8 h-8 m-2"
+          className="w-8 h-8 m-2 text-dark-green cursor-pointer"
         >
           <path
             strokeLinecap="round"
@@ -23,7 +23,7 @@ export default function NavDrawer({ children }) {
       </div>
       <div
         className={`${isOpen ? "max-w-[500px]" : "max-w-[0px]"}
-            overflow-auto transition-all duration-500 ease-in-out h-screen bg-tea-green z-20 fixed`}
+            overflow-auto transition-all duration-500 ease-in-out h-screen bg-light-green z-20 fixed`}
       >
         <div className="border border-dark-green border-4 rounded-lg p-2 w-fit h-full">
           <div className="w-fit p-1" onClick={() => setIsOpen(false)}>
@@ -134,7 +134,7 @@ export default function NavDrawer({ children }) {
                   </Link>
                 </div>
                 <div>
-                  <Link className="flex items-center" href={"/RateUs"}>
+                  <Link className="flex items-center gap-7" href={"/RateUs"}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
