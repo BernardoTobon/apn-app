@@ -6,7 +6,7 @@ const Accordion = (props) => {
 
   return (
     <div className="flex justify-center">
-    <div className={className || "border-4 border-dark-green w-[80vw]"}>
+    <div className={className || "border-4 border-dark-green w-[80vw] rounded-lg"}>
       <div
         onClick={() => setIsOpen(!isOpen)}
         className="grid justify-items-end"
