@@ -9,7 +9,7 @@ const HistoryUser = () => {
             Historia Clinica
           </h1>
           <form>
-            <div className="grid grid-cols-1 md:grid-cols-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
                 <label className="flex justify-center">
                   <svg
