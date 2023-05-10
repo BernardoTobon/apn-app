@@ -12,21 +12,21 @@ const UserHistory = () => {
           <form>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
-                <label className="flex justify-center">
+                <label className="flex justify-center text-dark-green">
                  {Consultation}
-                  Motivo De Consulta
+                  <span className="text-light-brown">Motivo De Consulta</span>
                 </label>
                 <input
-                  className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
                   type="text"
                 />
               </div>
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
-                <label className="flex justify-center">
+                <label className="flex justify-center text-dark-green">
                  {BloodType}
-                  Tipo De Sangre
+                 <span className="text-light-brown">Tipo De Sangre</span>
                 </label>
-                <select className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg">
+                <select className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg">
                   <option>A+</option>
                   <option>A-</option>
                   <option>B+</option>
@@ -38,64 +38,64 @@ const UserHistory = () => {
                 </select>
               </div>
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
-                <label className="flex justify-center">
+                <label className="flex justify-center text-dark-green">
                   {Surgery}
-                  Cirugias Realizadas
+                  <span className="text-light-brown">Cirugias Realizadas</span>
                 </label>
                 <input
-                  className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
                   type="text"
                 />
               </div>
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
-                <label className="flex justify-center">
+                <label className="flex justify-center text-dark-green">
                  {Allergy}
-                  Alergias
+                 <span className="text-light-brown">Alergias</span>
                 </label>
                 <input
-                  className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
                   type="text"
                 />
               </div>
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
-                <label className="flex justify-center">
+                <label className="flex justify-center text-dark-green">
                   {DDiagnosis}
-                  Diagnostico Previo
+                  <span className="text-light-brown">Diagnostico Previo</span>
                 </label>
                 <input
-                  className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
                   type="text"
                 />
               </div>
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
-                <label className="flex justify-center">
+                <label className="flex justify-center text-dark-green">
                   {Therapy}
-                  Terapeutica Previa
+                  <span className="text-light-brown">Terapia Previa</span>
                 </label>
                 <input
-                  className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
                   type="text"
                 />
               </div>
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
-                <label className="flex justify-center">
+                <label className="flex justify-center text-dark-green">
                   {ClinicalHistory}
-                  Antecedentes Heredo-Familiares
+                  <span className="text-light-brown">Antecedentes Heredo-Familiares</span>
                 </label>
                 <input
-                  className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
                   type="text"
                 />
               </div>
             </div>
             <div className="flex justify-center ">
             <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-64 w-full pt-8">
-              <label className="flex justify-center">
+              <label className="flex justify-center text-dark-green">
                 {Hashtags}
-                Hashtags
+                <span className="text-light-brown">Hashtags</span>
               </label>
               <input
-                className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg h-64"
+                className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg h-64"
                 type="text"
               />
             </div>
