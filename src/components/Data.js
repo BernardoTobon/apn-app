@@ -32,7 +32,7 @@ const UserData = () => {
                   <span className="text-light-brown">Nombre</span> 
                 </label>
                 <input
-                  className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
                   type="text"
                 />
               </div>
@@ -55,7 +55,7 @@ const UserData = () => {
                   <span className="text-light-brown">Primer Apellido </span>
                 </label>
                 <input
-                  className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
                   type="text"
                 />
               </div>
@@ -78,7 +78,7 @@ const UserData = () => {
                   <span className="text-light-brown">Segundo Apellido</span>
                 </label>
                 <input
-                  className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
                   type="text"
                 />
               </div>
@@ -101,7 +101,7 @@ const UserData = () => {
                   <span className="text-light-brown">DI</span>
                 </label>
                 <input
-                  className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
                   type="text"
                 />
               </div>
@@ -124,7 +124,7 @@ const UserData = () => {
                   <span className="text-light-brown">Fecha De Nacimiento</span>
                 </label>
                 <input
-                  className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  className="text-light-brown text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
                   type="date"
                 />
               </div>
@@ -147,7 +147,7 @@ const UserData = () => {
                   <span className="text-light-brown">Edad</span>
                 </label>
                 <input
-                  className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
                   type="text"
                 />
               </div>
@@ -169,7 +169,7 @@ const UserData = () => {
                   </svg>
                   <span className="text-light-brown">Genero</span>
                 </label>
-                <select className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg">
+                <select  className=" text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg">
                   <option>Hombre</option>
                   <option>Mujer</option>
                 </select>
@@ -193,7 +193,7 @@ const UserData = () => {
                   <span className="text-light-brown">Escolaridad</span>
                 </label>
                 <input
-                  className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
                   type="text"
                 />
               </div>
@@ -219,7 +219,7 @@ const UserData = () => {
                   <span className="text-light-brown">Celuklar</span>
                 </label>
                 <input
-                  className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
                   type="text"
                 />
               </div>
@@ -242,7 +242,7 @@ const UserData = () => {
                   <span className="text-light-brown">Telefono Fijo</span>
                 </label>
                 <input
-                  className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
                   type="text"
                 />
               </div>
@@ -264,8 +264,8 @@ const UserData = () => {
                   <span className="text-light-brown">E-mail</span>
                 </label>
                 <input
-                  className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
-                  type="text"
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  type="email"
                 />
               </div>
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
@@ -287,7 +287,7 @@ const UserData = () => {
                   <span className="text-light-brown">Direccion</span>
                 </label>
                 <input
-                  className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
                   type="text"
                 />
               </div>
@@ -310,7 +310,7 @@ const UserData = () => {
                   <span className="text-light-brown">Ciudad</span>
                 </label>
                 <input
-                  className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
                   type="text"
                 />
               </div>
@@ -333,7 +333,7 @@ const UserData = () => {
                   <span className="text-light-brown">Departamento</span>
                 </label>
                 <input
-                  className="text-center border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
                   type="text"
                 />
               </div>
