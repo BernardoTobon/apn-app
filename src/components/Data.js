@@ -12,7 +12,7 @@ const UserData = () => {
             <h1 className="m-3 flex justify-center font-extrabold  text-transparent text-2xl bg-clip-text bg-gradient-to-r from-light-brown to-dark-green">Datos de identidad</h1>
           </div>
           <form>
-            <div className="grid grid-cols-1 md:grid-cols-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
                 <label className="flex justify-center">
                   <svg
@@ -199,7 +199,7 @@ const UserData = () => {
               </div>
             </div>
             <h1 className="m-3 flex justify-center font-extrabold  text-transparent text-2xl bg-clip-text bg-gradient-to-r from-light-brown to-dark-green">Datos De Contacto</h1>
-            <div className="grid grid-cols-1 md:grid-cols-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
                 <label className="flex justify-center">
                   <svg
