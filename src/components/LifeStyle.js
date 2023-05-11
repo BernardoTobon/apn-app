@@ -1,8 +1,8 @@
 import {
+  Amount,
   Frequiency,
-  Info,
+  Question,
   Schedule,
-  Sports,
   Stress,
   Work,
   WorkDescription,
@@ -85,7 +85,7 @@ const LifeStyle = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
                 <label className="flex justify-center text-dark-green">
-                  {Info}
+                  {Question}
                   <span className="text-light-brown">
                     ¿Realizas actividad física?
                   </span>
@@ -100,7 +100,7 @@ const LifeStyle = () => {
               </div>
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
                 <label className="flex justify-center text-dark-green">
-                  {Info}
+                  {Question}
                   <span className="text-light-brown">
                     ¿Actividad Física + Tratamiento?
                   </span>
@@ -115,9 +115,9 @@ const LifeStyle = () => {
               </div>
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
                 <label className="flex justify-center text-dark-green">
-                  {Info}
+                  {Question}
                   <span className="text-light-brown">
-                    Dias x Semana Actividad Física
+                  ¿Dias x Semana Actividad Física?
                   </span>
                 </label>
                 <select className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg">
@@ -130,9 +130,9 @@ const LifeStyle = () => {
               </div>
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
                 <label className="flex justify-center text-dark-green">
-                  {Info}
+                  {Schedule}
                   <span className="text-light-brown">
-                    Actividad Fisica-Tiempo
+                  ¿Actividad Fisica-Tiempo?
                   </span>
                 </label>
                 <select className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg">
@@ -145,8 +145,8 @@ const LifeStyle = () => {
               </div>
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
                 <label className="flex justify-center text-dark-green">
-                  {Info}
-                  <span className="text-light-brown">Horario Factible</span>
+                  {Question}
+                  <span className="text-light-brown">¿Horario Factible?</span>
                 </label>
                 <select className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg">
                   {FEASIBLE_SCHEDULE.map((item, index) => (
@@ -158,8 +158,8 @@ const LifeStyle = () => {
               </div>
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
                 <label className="flex justify-center text-dark-green">
-                  {Info}
-                  <span className="text-light-brown">Deportes Practicados</span>
+                  {Question}
+                  <span className="text-light-brown">¿Deportes Practicados?</span>
                 </label>
                 <select className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg">
                   {SPORTS.map((item, index) => (
@@ -171,9 +171,9 @@ const LifeStyle = () => {
               </div>
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
                 <label className="flex justify-center text-dark-green">
-                  {Sports}
+                  {Question}
                   <span className="text-light-brown">
-                    Actividades Deportivas
+                  ¿Actividades Deportivas?
                   </span>
                 </label>
                 <input
@@ -207,7 +207,7 @@ const LifeStyle = () => {
                     </div>
                     <div className="m-2 flex flex-col pt-2">
                       <label className="flex justify-center text-dark-green">
-                        {Info}
+                        {Amount}
                         <span className="text-light-brown">Cantidad</span>
                       </label>
                       <input
@@ -237,7 +237,7 @@ const LifeStyle = () => {
                     </div>
                     <div className="m-2 flex flex-col pt-2">
                       <label className="flex justify-center text-dark-green">
-                        {Info}
+                        {Amount}
                         <span className="text-light-brown">Cantidad</span>
                       </label>
                       <input
@@ -267,7 +267,7 @@ const LifeStyle = () => {
                     </div>
                     <div className="m-2 flex flex-col pt-2">
                       <label className="flex justify-center text-dark-green">
-                        {Info}
+                        {Amount}
                         <span className="text-light-brown">Cantidad</span>
                       </label>
                       <input
@@ -285,7 +285,7 @@ const LifeStyle = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
                 <label className="flex justify-center text-dark-green">
-                  {Work}
+                  {Question}
                   <span className="text-light-brown">
                     Alimentos No Deseados
                   </span>
@@ -297,7 +297,7 @@ const LifeStyle = () => {
               </div>
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
                 <label className="flex justify-center text-dark-green">
-                  {WorkDescription}
+                  {Question}
                   <span className="text-light-brown">Alimentos Favoritos</span>
                 </label>
                 <input
