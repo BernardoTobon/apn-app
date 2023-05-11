@@ -279,6 +279,69 @@ const LifeStyle = () => {
                 </div>
               </div>
             </div>
+            <h1 className="m-3 flex justify-center font-extrabold  text-transparent text-2xl bg-clip-text bg-gradient-to-r from-light-brown to-dark-green">
+              Hábitos Dietéticos
+            </h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+              <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
+                <label className="flex justify-center text-dark-green">
+                  {Work}
+                  <span className="text-light-brown">
+                    Alimentos No Deseados
+                  </span>
+                </label>
+                <input
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  type="text"
+                />
+              </div>
+              <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
+                <label className="flex justify-center text-dark-green">
+                  {WorkDescription}
+                  <span className="text-light-brown">Alimentos Favoritos</span>
+                </label>
+                <input
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  type="text"
+                />
+              </div>
+              <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
+                <label className="flex justify-center text-dark-green">
+                  {Schedule}
+                  <span className="text-light-brown">
+                    ¿Dónde y a Qué Hora Desayunas?
+                  </span>
+                </label>
+                <input
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  type="text"
+                />
+              </div>
+              <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
+                <label className="flex justify-center text-dark-green">
+                  {Schedule}
+                  <span className="text-light-brown">
+                    ¿Dónde y a Qué Hora Almuerzas?
+                  </span>
+                </label>
+                <input
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  type="text"
+                />
+              </div>
+              <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
+                <label className="flex justify-center text-dark-green">
+                  {Schedule}
+                  <span className="text-light-brown">
+                    ¿Dónde y a Qué Hora Comes?
+                  </span>
+                </label>
+                <input
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                  type="text"
+                />
+              </div>
+            </div>
           </form>
         </div>
       </UserTabs>
