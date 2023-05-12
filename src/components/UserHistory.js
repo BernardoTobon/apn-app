@@ -1,5 +1,15 @@
-import { Allergy, BloodType, ClinicalHistory, Consultation, DDiagnosis, Hashtags, Surgery, Therapy } from "@/icons";
+import {
+  Allergy,
+  BloodType,
+  ClinicalHistory,
+  Consultation,
+  DDiagnosis,
+  Hashtags,
+  Surgery,
+  Therapy,
+} from "@/icons";
 import UserTabs from "./TabMenu";
+import { BLOOD_TYPE } from "@/constants";
 
 const UserHistory = () => {
   return (
@@ -13,7 +23,7 @@ const UserHistory = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
                 <label className="flex justify-center text-dark-green">
-                 {Consultation}
+                  {Consultation}
                   <span className="text-light-brown">Motivo De Consulta</span>
                 </label>
                 <input
@@ -23,18 +33,15 @@ const UserHistory = () => {
               </div>
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
                 <label className="flex justify-center text-dark-green">
-                 {BloodType}
-                 <span className="text-light-brown">Tipo De Sangre</span>
+                  {BloodType}
+                  <span className="text-light-brown">Tipo De Sangre</span>
                 </label>
                 <select className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg">
-                  <option>A+</option>
-                  <option>A-</option>
-                  <option>B+</option>
-                  <option>B-</option>
-                  <option>O+</option>
-                  <option>O-</option>
-                  <option>AB+</option>
-                  <option>AB-</option>
+                 {
+                  BLOOD_TYPE.map (
+                    (item, index) => <option key={index} value={item.value}>{item.label}</option>
+                  )
+                 }
                 </select>
               </div>
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
@@ -49,8 +56,8 @@ const UserHistory = () => {
               </div>
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
                 <label className="flex justify-center text-dark-green">
-                 {Allergy}
-                 <span className="text-light-brown">Alergias</span>
+                  {Allergy}
+                  <span className="text-light-brown">Alergias</span>
                 </label>
                 <input
                   className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
@@ -80,7 +87,9 @@ const UserHistory = () => {
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
                 <label className="flex justify-center text-dark-green">
                   {ClinicalHistory}
-                  <span className="text-light-brown">Antecedentes Heredo-Familiares</span>
+                  <span className="text-light-brown">
+                    Antecedentes Heredo-Familiares
+                  </span>
                 </label>
                 <input
                   className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
@@ -89,16 +98,16 @@ const UserHistory = () => {
               </div>
             </div>
             <div className="flex justify-center ">
-            <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-64 w-full pt-8">
-              <label className="flex justify-center text-dark-green">
-                {Hashtags}
-                <span className="text-light-brown">Hashtags</span>
-              </label>
-              <input
-                className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg h-64"
-                type="text"
-              />
-            </div>
+              <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-64 w-full pt-8">
+                <label className="flex justify-center text-dark-green">
+                  {Hashtags}
+                  <span className="text-light-brown">Hashtags</span>
+                </label>
+                <input
+                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg h-64"
+                  type="text"
+                />
+              </div>
             </div>
           </form>
         </div>
