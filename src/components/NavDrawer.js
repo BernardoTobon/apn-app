@@ -1,6 +1,15 @@
 import { useState } from "react";
 import Link from "next/link";
-import { BackArrow, Dates, Menu, RateUsIcon, RecipesIcon, UserHistoryIcon, Users } from "@/icons";
+import {
+  BackArrow,
+  Dates,
+  HomeIcon,
+  Menu,
+  RateUsIcon,
+  RecipesIcon,
+  UserHistoryIcon,
+  Users,
+} from "@/icons";
 
 export default function NavDrawer({ children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,9 +24,7 @@ export default function NavDrawer({ children }) {
       >
         <div className="border border-dark-green border-4 rounded-lg p-2 w-fit h-full">
           <div className="w-fit p-1" onClick={() => setIsOpen(false)}>
-            <button>
-              {BackArrow}
-            </button>
+            <button>{BackArrow}</button>
           </div>
           <div
             className={`${
@@ -29,6 +36,12 @@ export default function NavDrawer({ children }) {
           >
             <div className="px-4 pb-4">
               <div className="grid grid-rows-4 gap-4">
+              <div>
+                  <Link className="flex items-center gap-7" href={"/User"}>
+                    {HomeIcon}
+                    Inicio
+                  </Link>
+                </div>
                 <div>
                   <Link className="flex items-center gap-7" href={"/User"}>
                     {Users}
