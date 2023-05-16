@@ -1,14 +1,50 @@
-import { Address, Age, Birthday, CellPhone, City, Department, Di, Education, Email, Gender, Info, Phone } from "@/icons";
+import {
+  Address,
+  Age,
+  Birthday,
+  CellPhone,
+  City,
+  Department,
+  Di,
+  Education,
+  Email,
+  GenderIcon,
+  Info,
+  Phone,
+} from "@/icons";
 import UserTabs from "./TabMenu";
 import { GENDER } from "@/constants";
+import { useState } from "react";
+
+const AvatarComponent = ({ Gender }) => {
+  return (
+    <>
+      {Gender == "hombre" ? (
+        <img
+          src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-Pic.png"
+          alt="Avatar Hombre"
+        />
+      ) : (
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQInqp7OXfP5a9KAHlVYne4ZFQufaoKLACB0du-GHAGeq1DV5v24lPJp1aR-C5r6ITQ-yo&usqp=CAU"
+          alt="Avatar Mujer"
+        />
+      )}
+    </>
+  );
+};
 
 const UserData = () => {
+  const [Gender, setGender] = useState("");
+  const handleOfChange = (event) => {
+    setGender(event.target.value);
+  };
   return (
     <>
       <UserTabs>
         <div className="flex items-center flex-col">
           <div className="w-24 h-24 p-1">
-            <img src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-Pic.png" />
+            {Gender && <AvatarComponent Gender={Gender} />}
           </div>
           <div>
             <h1 className="m-3 flex justify-center font-extrabold  text-transparent text-2xl bg-clip-text bg-gradient-to-r from-light-brown to-dark-green">
@@ -79,11 +115,15 @@ const UserData = () => {
               </div>
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
                 <label className="flex justify-center text-dark-green">
-                 {Gender}
+                  {GenderIcon}
                   <span className="text-light-brown">Genero</span>
                 </label>
-                <select className=" text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg">
-                {GENDER.map((item, index) => (
+                <select
+                  value={Gender}
+                  onChange={handleOfChange}
+                  className=" text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg"
+                >
+                  {GENDER.map((item, index) => (
                     <option key={index} value={item.value}>
                       {item.label}
                     </option>
@@ -147,7 +187,7 @@ const UserData = () => {
               </div>
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-24 w-72 pt-8">
                 <label className="flex justify-center text-dark-green">
-                 {City}
+                  {City}
                   <span className="text-light-brown">Ciudad</span>
                 </label>
                 <input
