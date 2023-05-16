@@ -22,12 +22,11 @@ const AvatarComponent = ({ Gender }) => {
       {Gender == "hombre" ? (
         <img
           src="https://www.pngall.com/wp-content/uploads/12/Avatar-Profile-Vector-PNG-Pic.png"
-          alt="Avatar Hombre"
+          
         />
       ) : (
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQInqp7OXfP5a9KAHlVYne4ZFQufaoKLACB0du-GHAGeq1DV5v24lPJp1aR-C5r6ITQ-yo&usqp=CAU"
-          alt="Avatar Mujer"
         />
       )}
     </>
@@ -35,7 +34,7 @@ const AvatarComponent = ({ Gender }) => {
 };
 
 const UserData = () => {
-  const [Gender, setGender] = useState("");
+  const [Gender, setGender] = useState("hombre");
   const handleOfChange = (event) => {
     setGender(event.target.value);
   };
