@@ -12,7 +12,7 @@ const UserView = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4">
           <div className="flex flex-col items-center m-2">
             <label className="text-dark-green">Peso</label>
-            <label  className="focus:outline-none border border-2 border-r-0 border-t-0 border-l-0 border-fluorescent-green text-center text-light-brown rounded-lg w-32">20 kg</label>
+            <label  className="focus:outline-none border border-2 border-r-0 border-t-0 border-l-0 border-fluorescent-green text-center text-light-brown rounded-lg w-32">80 kg</label>
           </div>
           <div className="flex flex-col items-center m-2">
             <label className="text-dark-green">Estatura</label>
