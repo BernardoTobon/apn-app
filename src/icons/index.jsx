@@ -489,7 +489,7 @@ export const ClinicalHistory = (
   </svg>
 );
 
-export const Hashtags = (
+export const HashtagsIcon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
