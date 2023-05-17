@@ -4,7 +4,7 @@ import {
   ClinicalHistory,
   Consultation,
   DDiagnosis,
-  Hashtags,
+  HashtagsIcon,
   Surgery,
   Therapy,
 } from "@/icons";
@@ -100,7 +100,7 @@ const UserHistory = () => {
             <div className="flex justify-center ">
               <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-64 w-full pt-8">
                 <label className="flex justify-center text-dark-green">
-                  {Hashtags}
+                  {HashtagsIcon}
                   <span className="text-light-brown">Hashtags</span>
                 </label>
                 <input
