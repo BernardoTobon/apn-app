@@ -1,3 +1,5 @@
+import UserTabs from "./TabMenu";
+
 const { useState } = require("react");
 
 const Hashtags = () => {
@@ -13,8 +15,12 @@ const Hashtags = () => {
       setInputValue("");
     }
   };
+  
+
   return (
-    <><div className="flex justify-center">
+    <>
+    <UserTabs>
+    <div className="flex justify-center">
     <h1 className="m-3 flex justify-center font-extrabold  text-transparent text-2xl bg-clip-text bg-gradient-to-r from-light-brown to-dark-green">#Hashtags</h1>
     </div>
     <div className=" pt-10 flex justify-center">
@@ -49,6 +55,7 @@ const Hashtags = () => {
         </div>
       </div>
       </div>
+      </UserTabs>
     </>
   );
 };
