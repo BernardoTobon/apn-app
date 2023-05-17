@@ -3,6 +3,7 @@ import Link from "next/link";
 import {
   BackArrow,
   Dates,
+  HashtagsIcon,
   HomeIcon,
   Menu,
   RateUsIcon,
@@ -58,6 +59,12 @@ export default function NavDrawer({ children }) {
                   <Link className="flex items-center gap-7" href={"/calendar"}>
                     {Dates}
                     Calendario
+                  </Link>
+                </div>
+                <div>
+                  <Link className="flex items-center gap-7" href={"/User"}>
+                    {HashtagsIcon}
+                    Hashtags
                   </Link>
                 </div>
                 <div>
