@@ -98,16 +98,6 @@ const UserHistory = () => {
               </div>
             </div>
             <div className="flex justify-center ">
-              <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-64 w-full pt-8">
-                <label className="flex justify-center text-dark-green">
-                  {HashtagsIcon}
-                  <span className="text-light-brown">Hashtags</span>
-                </label>
-                <input
-                  className="text-center text-light-brown border border-2 border-dark-green focus:outline-none m-1 rounded-lg h-64"
-                  type="text"
-                />
-              </div>
             </div>
           </form>
         </div>
