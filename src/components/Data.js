@@ -15,6 +15,8 @@ import {
 import UserTabs from "./TabMenu";
 import { GENDER } from "@/constants";
 import { useState } from "react";
+import Hashtags from "./Hashtags";
+import { useRouter } from "next/router";
 
 const AvatarComponent = ({ Gender }) => {
   return (
@@ -205,6 +207,7 @@ const UserData = () => {
                 />
               </div>
             </div>
+            <Hashtags/>
           </form>
         </div>
       </UserTabs>
