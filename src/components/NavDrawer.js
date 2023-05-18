@@ -38,19 +38,19 @@ export default function NavDrawer({ children }) {
             <div className="px-4 pb-4">
               <div className="grid grid-rows-4 gap-4">
               <div>
-                  <Link className="flex items-center gap-7" href={"/User"}>
+                  <Link className="flex items-center gap-7" href={"/home"}>
                     {HomeIcon}
                     Inicio
                   </Link>
                 </div>
                 <div>
-                  <Link className="flex items-center gap-7" href={"/User"}>
+                  <Link className="flex items-center gap-7" href={"/user/userview"}>
                     {Users}
                     Usuarios
                   </Link>
                 </div>
                 <div>
-                  <Link className="flex items-center gap-7" href={"/Recipe"}>
+                  <Link className="flex items-center gap-7" href={"/recipe/recipes"}>
                     {RecipesIcon}
                     Mis Recetas
                   </Link>
@@ -62,7 +62,7 @@ export default function NavDrawer({ children }) {
                   </Link>
                 </div>
                 <div>
-                  <Link className="flex items-center gap-7" href={"/User"}>
+                  <Link className="flex items-center gap-7" href={"/user/hashtag"}>
                     {HashtagsIcon}
                     Hashtags
                   </Link>
