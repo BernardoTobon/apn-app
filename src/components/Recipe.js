@@ -1,77 +1,13 @@
-import { useState } from "react";
+import Link from "next/link"
 
-function Recipe() {
-  const [image, setImage] = useState();
-  const [text, setText] = useState("");
-  const [savedData, setSavedData] = useState([]);
-
-  const handleFileInputChange = (event) => {
-    setImage(event.target.files[0]);
-  };
-
-  const handleTextChange = (event) => {
-    setText(event.target.value);
-  };
-
-  const handleSave = () => {
-    const newData = {
-      image: image,
-      text: text,
-    };
-    const newSavedData = [...savedData];
-    newSavedData.push(newData);
-    setSavedData(newSavedData);
-    setImage();
-    setText("");
-  };
-
-  return (
-    <div className="bg-light-green h-screen overflow-scroll">
-      <h1 className="m-3 flex justify-center font-extrabold  text-transparent text-5xl bg-clip-text bg-gradient-to-r from-light-brown to-dark-green ">
-        MIS RECETAS
-      </h1>
-      <div className="flex flex-col ">
-        <div className="grid grid-cols-1 md:grid-cols-3 overflow-auto max-h-[620px] gap-1 border border-[1vw] md:border-[0.5vw] rounded-lg border-fluorescent-green">
-          {savedData.map((data, index) => (
-            <div className="m-2" key={index}>
-              <div className="flex justify-center">
-              <img
-                className=" h-[50vw] w-[60vw] md:h-80 md:w-96 border border-2 border-dark-green "
-                src={data.image && URL.createObjectURL(data.image)}
-                alt={`Imagen`}
-              />
-              </div>
-              <p
-                className="p-1 m-2 bg-tea-green w-30 h-30 text-left overflow-auto border-2 border-light-brown"
-                style={{
-                  overflowWrap: "break-word",
-                  wordWrap: "break-word",
-                  msWordBreak: "break-all",
-                  wordBreak: "break-word",
-                }}
-              >
-                {data.text}
-              </p>
-            </div>
-          ))}
-        </div>
-        <div className="m-2 flex flex-col h-[40vw] md:h-[15vw] gap-2">
-          <input type="file" onChange={handleFileInputChange} />
-          <textarea
-            className="border border-2 border-dark-green m-2 "
-            value={text}
-            onChange={handleTextChange}
-          />
-          <button
-            className="ml-[30vw] md:ml-[40vw] bg-dark-green text-light-green border border-2 border-dark-green rounded-full w-[30vw] md:w-[15vw]"
-            onClick={handleSave}
-          >
-            Guardar
-          </button>
-        </div>
-      </div>
-    </div>
-  );
+const Recipe = () => {
+  return <>
+  <h1 className="flex justify-center m-3 flex justify-center font-extrabold  text-transparent text-2xl bg-clip-text bg-gradient-to-r from-light-brown to-dark-green">Mis Recetas</h1>
+  <div className="flex justify-center">
+    <input className="focus:outline-none border border-2 border-fluorescent-green" type="search"></input>
+     <Link href={"#"} className="border border-2 border-dark-green bg-light-green rounded-lg">Nueva Receta</Link>
+  </div>
+  </>
 }
-
-export default Recipe;
+ 
+export default Recipe

@@ -17,7 +17,7 @@ const MenuTabItem = ({ pathname, label }) => {
   );
 };
 
-const UserTabs = ({ children }) => {
+const TabMenu = ({ children }) => {
   const router = useRouter();
   return (
     <>
@@ -37,4 +37,4 @@ const UserTabs = ({ children }) => {
     </>
   );
 };
-export default UserTabs;
+export default TabMenu;
