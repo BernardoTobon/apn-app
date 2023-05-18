@@ -1,9 +1,7 @@
-import UserTabs from "./TabMenu";
-
 const Goals = () => {
   return (
     <>
-      <UserTabs>
+
         <div className="flex items-center flex-col">
             <h1 className="m-3 flex justify-center font-extrabold  text-transparent text-2xl bg-clip-text bg-gradient-to-r from-light-brown to-dark-green">
               Objetivos
@@ -31,7 +29,6 @@ const Goals = () => {
             </div>
           </form>
         </div>
-      </UserTabs>
     </>
   );
 };

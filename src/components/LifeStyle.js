@@ -7,7 +7,6 @@ import {
   Work,
   WorkDescription,
 } from "@/icons";
-import UserTabs from "./TabMenu";
 import {
   ACTIVITY_TIME,
   FEASIBLE_SCHEDULE,
@@ -22,7 +21,7 @@ import {
 const LifeStyle = () => {
   return (
     <>
-      <UserTabs>
+ 
         <div className="flex items-center flex-col">
           <div>
             <h1 className="m-3 flex justify-center font-extrabold  text-transparent text-2xl bg-clip-text bg-gradient-to-r from-light-brown to-dark-green">
@@ -344,7 +343,6 @@ const LifeStyle = () => {
             </div>
           </form>
         </div>
-      </UserTabs>
     </>
   );
 };

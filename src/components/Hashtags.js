@@ -19,7 +19,6 @@ const Hashtags = () => {
 
   return (
     <>
-    <UserTabs>
     <div className="flex justify-center">
     <h1 className="m-3 flex justify-center font-extrabold  text-transparent text-2xl bg-clip-text bg-gradient-to-r from-light-brown to-dark-green">#Hashtags</h1>
     </div>
@@ -55,7 +54,6 @@ const Hashtags = () => {
         </div>
       </div>
       </div>
-      </UserTabs>
     </>
   );
 };

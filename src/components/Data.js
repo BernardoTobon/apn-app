@@ -12,11 +12,9 @@ import {
   Info,
   Phone,
 } from "@/icons";
-import UserTabs from "./TabMenu";
 import { GENDER } from "@/constants";
 import { useState } from "react";
 import Hashtags from "./Hashtags";
-import { useRouter } from "next/router";
 
 const AvatarComponent = ({ Gender }) => {
   return (
@@ -42,7 +40,7 @@ const UserData = () => {
   };
   return (
     <>
-      <UserTabs>
+
         <div className="flex items-center flex-col">
           <div className="w-24 h-24 p-1">
             {Gender && <AvatarComponent Gender={Gender} />}
@@ -210,7 +208,7 @@ const UserData = () => {
             <Hashtags/>
           </form>
         </div>
-      </UserTabs>
+
     </>
   );
 };
