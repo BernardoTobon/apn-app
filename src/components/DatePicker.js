@@ -10,7 +10,7 @@ const localizer = momentLocalizer(moment); // configurar el localizador con Mome
 
 
 
-function Calendario() {
+function DatePicker() {
   const [events, setEvents] = useState([]);
 
   const handleSelect = ({ start, end, title, id, type }) => {
@@ -80,6 +80,7 @@ function Calendario() {
   return (
     <div className="p-4">
       <Calendar
+        className="pt-8"
         selectable
         localizer={localizer}
         events={events}
@@ -93,4 +94,4 @@ function Calendario() {
   );
 }
 
-export default Calendario;
+export default DatePicker;
