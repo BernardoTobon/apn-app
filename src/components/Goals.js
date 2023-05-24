@@ -1,3 +1,5 @@
+import Hashtags from "./Hashtags";
+
 const Goals = () => {
   return (
     <>
@@ -27,6 +29,7 @@ const Goals = () => {
                 />
               </div>
             </div>
+            <Hashtags/>
           </form>
         </div>
     </>

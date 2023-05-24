@@ -17,6 +17,7 @@ import {
   STRESS_LEVEL,
   WEEK_ACTIVITY,
 } from "@/constants";
+import Hashtags from "./Hashtags";
 
 const LifeStyle = () => {
   return (
@@ -341,6 +342,7 @@ const LifeStyle = () => {
                 />
               </div>
             </div>
+            <Hashtags/>
           </form>
         </div>
     </>

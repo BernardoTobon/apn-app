@@ -8,6 +8,7 @@ import {
   Therapy,
 } from "@/icons";
 import { BLOOD_TYPE } from "@/constants";
+import Hashtags from "./Hashtags";
 
 const UserHistory = () => {
   return (
@@ -94,8 +95,7 @@ const UserHistory = () => {
                 />
               </div>
             </div>
-            <div className="flex justify-center ">
-            </div>
+            <Hashtags/>
           </form>
         </div>
     </>
