@@ -29,3 +29,26 @@ export const userData = {
         name:"",
       }
 }
+
+export const USER_TABS = [
+  {
+    pathname: "/user/data",
+    label: "Datos",
+  },
+  {
+    pathname: "/user/userhistory",
+    label: "Historia Clinica",
+  },
+  {
+    pathname: "/user/lifestyle",
+    label: "Estilo De Vida",
+  },
+  {
+    pathname: "/user/goals",
+    label: "Objetivos",
+  },
+  {
+    pathname: "/user/hashtag",
+    label: "Hashtags",
+  },
+]
