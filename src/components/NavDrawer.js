@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import {
+  AddUserIcon,
   BackArrow,
   Dates,
   HashtagsIcon,
@@ -50,6 +51,15 @@ export default function NavDrawer({ children }) {
                   >
                     {Users}
                     Usuarios
+                  </Link>
+                </div>
+                <div>
+                  <Link
+                    className="flex items-center gap-7"
+                    href={"/user/userview"}
+                  >
+                    {AddUserIcon}
+                    Nuevo Usuario
                   </Link>
                 </div>
                 <div>
