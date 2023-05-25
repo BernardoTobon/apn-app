@@ -21,7 +21,7 @@ export default function NavDrawer({ children }) {
       </div>
       <div
         className={`${isOpen ? "max-w-[500px]" : "max-w-[0px]"}
-            overflow-auto transition-all duration-500 ease-in-out h-screen bg-light-green z-20 fixed`}
+            overflow-auto transition-all duration-500 ease-in-out h-screen bg-white z-20 fixed`}
       >
         <div className="border border-dark-green border-4 rounded-lg p-2 w-fit h-full">
           <div className="w-fit p-1" onClick={() => setIsOpen(false)}>
@@ -37,20 +37,26 @@ export default function NavDrawer({ children }) {
           >
             <div className="px-4 pb-4">
               <div className="grid grid-rows-4 gap-4">
-              <div>
+                <div>
                   <Link className="flex items-center gap-7" href={"/home"}>
                     {HomeIcon}
                     Inicio
                   </Link>
                 </div>
                 <div>
-                  <Link className="flex items-center gap-7" href={"/user/userview"}>
+                  <Link
+                    className="flex items-center gap-7"
+                    href={"/user/userview"}
+                  >
                     {Users}
                     Usuarios
                   </Link>
                 </div>
                 <div>
-                  <Link className="flex items-center gap-7" href={"/recipe/recipes"}>
+                  <Link
+                    className="flex items-center gap-7"
+                    href={"/recipe/recipes"}
+                  >
                     {RecipesIcon}
                     Mis Recetas
                   </Link>
@@ -62,7 +68,10 @@ export default function NavDrawer({ children }) {
                   </Link>
                 </div>
                 <div>
-                  <Link className="flex items-center gap-7" href={"/user/hashtag"}>
+                  <Link
+                    className="flex items-center gap-7"
+                    href={"/user/hashtag"}
+                  >
                     {HashtagsIcon}
                     Hashtags
                   </Link>

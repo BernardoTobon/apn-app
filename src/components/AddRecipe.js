@@ -1,4 +1,3 @@
-
 const AddRecipe = () => {
   return (
     <div className="flex justify-center">
@@ -15,15 +14,15 @@ const AddRecipe = () => {
         <div className="flex flex-col items-center m-2">
             <label className="text-dark-green">Imagen</label>
           <input type="file" 
-          className="border border-2 border-fluorescent-green focus:outline-none"/>
+          className="border border-2 border-fluorescent-green focus:outline-none p-2 rounded-lg"/>
         </div>
         <div className="flex flex-col items-center m-2">
             <label className="text-dark-green">Ingredientes</label>
-          <textarea className="border border-2 border-fluorescent-green focus:outline-none"/>
+          <textarea className="border border-2 border-fluorescent-green focus:outline-none rounded-lg"/>
         </div>
         <div className="flex flex-col items-center m-2">
             <label className="text-dark-green">Preparacion</label>
-          <textarea className="border border-2 border-fluorescent-green focus:outline-none"/>
+          <textarea className="border border-2 border-fluorescent-green focus:outline-none rounded-lg"/>
         </div>
         </div>
         </div>

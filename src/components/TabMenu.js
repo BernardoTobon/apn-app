@@ -25,12 +25,13 @@ const TabMenu = ({ children }) => {
     !router.pathname.startsWith("/recipe/recipeimage") &&
     !router.pathname.startsWith("/recipe/recipeingredient") &&
     !router.pathname.startsWith("/recipe/recipepreparation") &&
-    !router.pathname.startsWith("/recipe/recipehashtags")
+    !router.pathname.startsWith("/recipe/recipehashtags") && 
+    !router.pathname.startsWith("/recipe/recipeview") 
   )
     return children;
   return (
     <>
-      <div className="flex justify-center pt-2">
+      <div className="flex justify-center pt-6">
         <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
           {items.map((item, index) => (
             <MenuTabItem key={index} {...item} />
