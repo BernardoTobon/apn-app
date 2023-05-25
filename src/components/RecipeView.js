@@ -7,7 +7,7 @@ const RecipeView = () => {
         </label>
       </div>
       <div className="flex justify-center">
-        <div className="border boder-2 border-fluorescent-green h-64 w-64 rounded-lg"></div>
+        <div className="border boder-2 border-fluorescent-green h-80 w-80 rounded-lg"></div>
       </div>
     </>
   );
