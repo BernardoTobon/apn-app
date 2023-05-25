@@ -13,12 +13,23 @@ const Recipe = () => {
           type="search"
           placeholder="Buscar"
         ></input>
-        <Link
-          href={"#"}
-        >
-          {AddIcon}
-        </Link>
+        <Link href={"/recipe/addrecipe"}>{AddIcon}</Link>
       </div>
+        <div className="flex justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5">
+          <div className="border border-2 border-fluorescent-green h-48 w-48 m-4 rounded-lg">
+            <Link href={"/recipe/recipeview"}>click</Link>
+          </div>
+          <div className="border border-2 border-fluorescent-green h-48 w-48 m-4 rounded-lg"></div>
+          <div className="border border-2 border-fluorescent-green h-48 w-48 m-4 rounded-lg"></div>
+          <div className="border border-2 border-fluorescent-green h-48 w-48 m-4 rounded-lg"></div>
+          <div className="border border-2 border-fluorescent-green h-48 w-48 m-4 rounded-lg"></div>
+          <div className="border border-2 border-fluorescent-green h-48 w-48 m-4 rounded-lg"></div>
+          <div className="border border-2 border-fluorescent-green h-48 w-48 m-4 rounded-lg"></div>
+          <div className="border border-2 border-fluorescent-green h-48 w-48 m-4 rounded-lg"></div>
+          </div>
+        </div>
+      
     </>
   );
 };
