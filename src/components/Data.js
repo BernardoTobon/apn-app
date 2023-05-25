@@ -33,7 +33,7 @@ const AvatarComponent = ({ Gender }) => {
   );
 };
 
-const UserData = () => {
+const Data = () => {
   const [Gender, setGender] = useState("hombre");
   const handleOfChange = (event) => {
     setGender(event.target.value);
@@ -213,4 +213,4 @@ const UserData = () => {
   );
 };
 
-export default UserData;
+export default Data;
