@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
-import { USER_TABS } from "../../constants";
+import { RECIPE_TABS, USER_TABS } from "../../constants";
 
 const MenuTabItem = ({ pathname, label }) => {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <li className="mr-2">
       <a
@@ -19,20 +19,25 @@ const MenuTabItem = ({ pathname, label }) => {
 
 const TabMenu = ({ children }) => {
   const router = useRouter();
+  const items = router.pathname.startsWith("/user") ? USER_TABS : RECIPE_TABS;
+  if (
+    !router.pathname.startsWith("/user") &&
+    !router.pathname.startsWith("/recipe/recipeimage") &&
+    !router.pathname.startsWith("/recipe/recipeingredient") &&
+    !router.pathname.startsWith("/recipe/recipepreparation") &&
+    !router.pathname.startsWith("/recipe/recipehashtags")
+  )
+    return children;
   return (
     <>
-      {router.pathname.startsWith("/user") && (
-        <div className="flex justify-center pt-2 ">
-          <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
-            {
-              USER_TABS.map(
-                (item, index)=><MenuTabItem key={index} {...item}/>
-              )
-            }
-            
-          </ul>
-        </div>
-      )}
+      <div className="flex justify-center pt-2">
+        <ul className="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400">
+          {items.map((item, index) => (
+            <MenuTabItem key={index} {...item} />
+          ))}
+        </ul>
+      </div>
+
       <div>{children}</div>
     </>
   );
