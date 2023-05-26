@@ -56,7 +56,7 @@ export default function NavDrawer({ children }) {
                 <div>
                   <Link
                     className="flex items-center gap-7"
-                    href={"/user/userview"}
+                    href={"/newuser"}
                   >
                     {AddUserIcon}
                     Nuevo Usuario
