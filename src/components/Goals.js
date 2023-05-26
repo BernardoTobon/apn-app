@@ -10,7 +10,7 @@ const Goals = () => {
             </h1>
           <form>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-              <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-32 w-96 pt-8">
+              <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-32 w-80 pt-8">
                 <label className="flex justify-center text-dark-green">
                   <span className="text-light-brown">Objetivos Del Paciente</span>
                 </label>
@@ -19,7 +19,7 @@ const Goals = () => {
                   type="text"
                 />
               </div>
-              <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-32 w-96 pt-8">
+              <div className="m-2 flex flex-col border-2 border-fluorescent-green rounded-lg h-32 w-80 pt-8">
                 <label className="flex justify-center text-dark-green">
                   <span className="text-light-brown">Plan Alimenticio</span>
                 </label>
