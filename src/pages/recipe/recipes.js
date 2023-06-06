@@ -1,4 +1,4 @@
-const { default: Recipe } = require("@/components/Recipe")
+const { default: Recipe } = require("@/components/recipe/Recipe")
 
 const RecipePage = () => {
     return <>
