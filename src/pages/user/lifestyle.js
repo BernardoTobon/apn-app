@@ -1,4 +1,4 @@
-import LifeStyle from "@/components/LifeStyle"
+import LifeStyle from "@/components/data/LifeStyle"
 
 const LifeStylePage = () => {
     return <>
