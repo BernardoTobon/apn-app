@@ -41,9 +41,8 @@ const Folds = () => {
             <div className="w-40 m-1">
               <label className="text-dark-green">Subescapular</label>
             </div>
-            <div>
               <input
-                className="w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
+                className="m-1 text-center w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
                 type="text"
                 value={subscapularis}
                 onChange={(e) => setSubscapularis(e.target.value)}
@@ -52,15 +51,13 @@ const Folds = () => {
                   handleFieldClickParagraph("subscapularis");
                 }}
               />
-            </div>
           </div>
           <div className="flex flex-row">
             <div className="w-40 m-1">
               <label className="text-dark-green">Tríceps</label>
             </div>
-            <div>
               <input
-                className="w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
+                className="m-1 text-center w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
                 type="text"
                 value={triceps}
                 onChange={(e) => setTriceps(e.target.value)}
@@ -69,15 +66,13 @@ const Folds = () => {
                   handleFieldClickParagraph("triceps");
                 }}
               />
-            </div>
           </div>
           <div className="flex flex-row">
             <div className="w-40 m-1">
               <label className="text-dark-green">Bíceps</label>
             </div>
-            <div>
               <input
-                className="w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
+                className="m-1 text-center w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
                 type="text"
                 value={biceps}
                 onChange={(e) => setBiceps(e.target.value)}
@@ -86,15 +81,13 @@ const Folds = () => {
                   handleFieldClickParagraph("biceps");
                 }}
               />
-            </div>
           </div>
           <div className="flex flex-row">
             <div className="w-40 m-1">
               <label className="text-dark-green">Cresta Ilíaca</label>
             </div>
-            <div>
               <input
-                className="w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
+                className="m-1 text-center w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
                 type="text"
                 value={iliac}
                 onChange={(e) => setILiac(e.target.value)}
@@ -103,15 +96,13 @@ const Folds = () => {
                   handleFieldClickParagraph("iliac");
                 }}
               />
-            </div>
           </div>
           <div className="flex flex-row">
             <div className="w-40 m-1">
               <label className="text-dark-green">Supraespinal</label>
             </div>
-            <div>
               <input
-                className="w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
+                className="m-1 text-center w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
                 type="text"
                 value={supraspinal}
                 onChange={(e) => setSupraspinal(e.target.value)}
@@ -120,15 +111,13 @@ const Folds = () => {
                   handleFieldClickParagraph("supraspinal");
                 }}
               />
-            </div>
           </div>
           <div className="flex flex-row">
             <div className="w-40 m-1">
               <label className="text-dark-green">Abdominal</label>
             </div>
-            <div>
               <input
-                className="w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
+                className="m-1 text-center w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
                 type="text"
                 value={abdominal}
                 onChange={(e) => setAbdominal(e.target.value)}
@@ -137,15 +126,13 @@ const Folds = () => {
                   handleFieldClickParagraph("abdominal");
                 }}
               />
-            </div>
           </div>
           <div className="flex flex-row">
             <div className="w-40 m-1">
-              <label className="text-dark-green">Muslo Frontal</label>
+              <label className="m-1 text-dark-green">Muslo Frontal</label>
             </div>
-            <div>
               <input
-                className="w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
+                className="m-1 text-center w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
                 type="text"
                 value={frontThigh}
                 onChange={(e) => setFrontThigh(e.target.value)}
@@ -155,14 +142,12 @@ const Folds = () => {
                 }}
               />
             </div>
-          </div>
           <div className="flex flex-row">
             <div className="w-40 m-1">
               <label className="text-dark-green">Pantorrilla Medial</label>
             </div>
-            <div>
               <input
-                className=" w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
+                className="m-1 text-center w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
                 type="text"
                 value={medialCalf}
                 onChange={(e) => setMedialCalf(e.target.value)}
@@ -171,15 +156,13 @@ const Folds = () => {
                   handleFieldClickParagraph("medialCalf");
                 }}
               />
-            </div>
           </div>
           <div className="flex flex-row">
             <div className="w-40 m-1">
               <label className="text-dark-green">Axilar Medial</label>
             </div>
-            <div>
               <input
-                className="w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
+                className="m-1 text-center w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
                 type="text"
                 value={MedialAxillary}
                 onChange={(e) => setMedialAxillary(e.target.value)}
@@ -188,15 +171,13 @@ const Folds = () => {
                   handleFieldClickParagraph("medialAxillary");
                 }}
               />
-            </div>
           </div>
           <div className="flex flex-row">
             <div className="w-40 m-1">
               <label className="text-dark-green">Pectoral</label>
             </div>
-            <div>
               <input
-                className="w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
+                className="m-1 text-center w-40 md:w-64 focus:outline-none border border-2 border-fluorescent-green rounded-lg"
                 type="text"
                 value={pectoral}
                 onChange={(e) => setPectoral(e.target.value)}
@@ -205,7 +186,6 @@ const Folds = () => {
                   handleFieldClickParagraph("pectoral");
                 }}
               />
-            </div>
           </div>
         </form>
       </div>
@@ -253,7 +233,7 @@ const Folds = () => {
               <br />
               <b>
                 Se usa en Fórmulas de: Siri, Brozek, Faulkner, Ledesma y cálculo
-                  del somatotipo
+                del somatotipo
               </b>
             </p>
           ) : paragraphVisible === "triceps" ? (
@@ -281,18 +261,42 @@ const Folds = () => {
               <b>Se usa en Fórmulas de: Siri, Brozek y Ledesma.</b>
             </p>
           ) : paragraphVisible === "supraspinal" ? (
-            <p>Está localizado en la intersección formada en la línea del borde superior del íleon y una línea imaginaria que va desde la espina ilíaca antero posterior derecha hasta el borde axilar anterior<br/>
-            <b>Se usa para Fórmulas de: Siri, Brozek, Faulkner, Ledesma y cálculo del somatotipo</b></p>
+            <p>
+              Está localizado en la intersección formada en la línea del borde
+              superior del íleon y una línea imaginaria que va desde la espina
+              ilíaca antero posterior derecha hasta el borde axilar anterior
+              <br />
+              <b>
+                Se usa para Fórmulas de: Siri, Brozek, Faulkner, Ledesma y
+                cálculo del somatotipo
+              </b>
+            </p>
           ) : paragraphVisible === "abdominal" ? (
-            <p>Está situada lateralmente a la derecha junto a la cicatriz umbilical anterior<br/>
-            <b>Se usa en la Fórmula de Faulkner para cálculo de grasa coporal.</b></p>
+            <p>
+              Está situada lateralmente a la derecha junto a la cicatriz
+              umbilical anterior
+              <br />
+              <b>
+                Se usa en la Fórmula de Faulkner para cálculo de grasa coporal.
+              </b>
+            </p>
           ) : paragraphVisible === "frontThigh" ? (
-            <p>Está localizado en el punto medio de la línea que une al pliegue inguinal y el borde proximal del rótulo.</p>
+            <p>
+              Está localizado en el punto medio de la línea que une al pliegue
+              inguinal y el borde proximal del rótulo.
+            </p>
           ) : paragraphVisible === "medialCalf" ? (
-            <p>Está localizado en la zona donde el perímetro de la pantorrilla es máximo.<br/>
-            <b>Se usa para cálculo del somatotipo</b></p>
+            <p>
+              Está localizado en la zona donde el perímetro de la pantorrilla es
+              máximo.
+              <br />
+              <b>Se usa para cálculo del somatotipo</b>
+            </p>
           ) : paragraphVisible === "medialAxillary" ? (
-            <p>Está localizado en la línea media axilar a la altura de la apófisis xifoides.</p>
+            <p>
+              Está localizado en la línea media axilar a la altura de la
+              apófisis xifoides.
+            </p>
           ) : paragraphVisible === "pectoral" ? (
             <p>Está localizado en la línea que une la axila con el pezón.</p>
           ) : (
