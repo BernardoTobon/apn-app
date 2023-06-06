@@ -6,13 +6,13 @@ export const userDataDetail = [
       email: "jarami@gmail.com",
     },
     {
-      name2: "dario",
+      name2: "Luis",
       lastName: "gomez",
       userId: "3434534534",
       email: "dario@gmail.com",
     },
     {
-      name2: "diomedez",
+      name2: "Camilo",
       lastName: "diaz",
       userId: "789789789",
       email: "dias@gmail.com",
@@ -49,6 +49,21 @@ export const USER_TABS = [
   },
   {
     pathname: "/user/hashtag",
+    label: "Hashtags",
+  },
+]
+
+export const RECIPE_TABS = [
+  {
+    pathname: "/recipe/recipeingredient",
+    label: "Ingredientes",
+  },
+  {
+    pathname: "/recipe/recipepreparation",
+    label: "Preparacion",
+  },
+  {
+    pathname: "/recipe/recipehashtags",
     label: "Hashtags",
   },
 ]
