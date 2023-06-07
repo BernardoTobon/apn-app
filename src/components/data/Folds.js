@@ -16,8 +16,6 @@ const Folds = () => {
 
   const videoRef = useRef(null);
 
-  const paragraRef = useRef(null);
-
   const handleFieldClick = (field) => {
     setVideoVisible(field);
   };
@@ -299,12 +297,9 @@ const Folds = () => {
             </p>
           ) : paragraphVisible === "pectoral" ? (
             <p>Está localizado en la línea que une la axila con el pezón.</p>
-          ) : (
-            <p ref={paragraRef} src={paragraphVisible}></p>
-          )}
+          ) :paragraphVisible}
         </div>
       </div>
-      <div></div>
     </div>
   );
 };
