@@ -1,4 +1,4 @@
-import ImcGraphics from "./ImcGraphics"
+import ImcGraphics from "./data/ImcGraphics"
 
 const Measurements = () => {
     return <>
