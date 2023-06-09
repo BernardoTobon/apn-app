@@ -1,8 +1,8 @@
 import Accordion from "./Accordion";
-import Data from "./Data";
-import Goals from "./Goals";
-import LifeStyle from "./LifeStyle";
-import UserHistory from "./UserHistory";
+import Data from "./data/Data";
+import Goals from "./data/Goals";
+import LifeStyle from "./data/LifeStyle";
+import UserHistory from "./data/UserHistory";
 
 const NewUser = () => {
   return (
