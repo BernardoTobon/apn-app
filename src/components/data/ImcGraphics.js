@@ -1,35 +1,19 @@
-import React, { useState } from "react";
-import { Bar } from "react-chartjs-2";
 import { Chart } from "chart.js/auto";
+import React, { useState, useEffect } from "react";
+import { Bar } from "react-chartjs-2";
 
 export default function ImcGraphics() {
-  const [height, setHeight] = useState();
-  const [weight, setWeight] = useState();
-  const [data, setData] = useState({
-    labels: [],
-    datasets: [
-      {
-        label: "IMC",
-        data: [],
-        tension: 0.5,
-        fill: true,
-        borderColor: "rgba(255, 99, 132)",
-        backgroundColor: "rgba(255, 99, 132, 0.5)",
-        pointRadius: 5,
-        pointBorderColor: "rgba(255, 99, 132)",
-        pointBackgroundColor: "rgba(255, 99, 132)",
-        borderWidth: 0.1,
-      },
-    ],
-  });
+  const [height, setHeight] = useState("");
+  const [weight, setWeight] = useState("");
+  const [imc, setIMC] = useState(0);
 
-  const calcularIMC = () => {
+  useEffect(() => {
     const heightMeters = height / 100;
-    const imc = weight / (heightMeters * heightMeters);
-    return imc.toFixed(2);
-  };
+    const newIMC = weight / (heightMeters * heightMeters);
+    setIMC(newIMC.toFixed(2));
+  }, [height, weight]);
 
-  const getIMCColor = (imc) => {
+  const getIMCColor = () => {
     if (imc < 18.5) {
       return "rgba(0, 123, 255)";
     } else if (imc >= 18.5 && imc < 25) {
@@ -41,25 +25,6 @@ export default function ImcGraphics() {
     }
   };
 
-  const updateData = () => {
-    const newData = [...data.datasets[0].data];
-    const imc = parseFloat(calcularIMC());
-    newData.push(imc);
-    const newLabels = [...data.labels];
-    newLabels.push(`Peso ${data.labels.length + 1}`);
-    setData({
-      ...data,
-      labels: newLabels,
-      datasets: [
-        {
-          ...data.datasets[0],
-          data: newData,
-          backgroundColor: newData.map((imcValue) => getIMCColor(imcValue)),
-        },
-      ],
-    });
-  };
-
   const handleHeightChange = (event) => {
     setHeight(event.target.value);
   };
@@ -68,40 +33,61 @@ export default function ImcGraphics() {
     setWeight(event.target.value);
   };
 
-  return (<> 
-      <div className="grid grid-cols-1 md:grid-cols-2 m-2"> 
+  const handleSave = () => {
+    // Aquí puedes implementar la lógica para guardar el IMC
+    console.log("IMC guardado:", imc);
+  };
+
+  return (
+    <>
+      <div className="grid grid-cols-1 md:grid-cols-2 m-2">
         <div className="m-10">
-        <div className="flex flex-col items-center">
-          <label className="text-dark-green">Estatura (cm)</label>
-          <input
-            className="w-24 border border-2 border-fluorescent-green text-center focus:outline-none rounded-lg"
-            type="number"
-            value={estatura}
-            onChange={handleHeightChange}
-          />
-        </div>
-        <div className="flex flex-col items-center">
-          <label className="text-dark-green">Peso (kg)</label>
-          <input
-            className="w-24 border border-2 border-fluorescent-green text-center focus:outline-none rounded-lg"
-            type="number"
-            value={peso}
-            onChange={handleWeightChange}
-          />
-        </div>
-        <div className="flex justify-center">
-        <button
-          className="text-dark-green m-4 border border-2 border-fluorescent-green rounded-lg p-1"
-          onClick={updateData}
-        >
-          Calcular IMC y Actualizar Gráfico
-        </button>
-        </div>
+          <div className="flex flex-col items-center">
+            <label className="text-dark-green">Estatura (cm)</label>
+            <input
+              className="w-24 border border-2 border-fluorescent-green text-center focus:outline-none rounded-lg"
+              type="number"
+              value={height}
+              onChange={handleHeightChange}
+            />
+          </div>
+          <div className="flex flex-col items-center">
+            <label className="text-dark-green">Peso (kg)</label>
+            <input
+              className="w-24 border border-2 border-fluorescent-green text-center focus:outline-none rounded-lg"
+              type="number"
+              value={weight}
+              onChange={handleWeightChange}
+            />
+          </div>
+          <div className="flex justify-center">
+            <button
+              className="text-dark-green m-4 border border-2 border-fluorescent-green rounded-lg p-1"
+              onClick={handleSave}
+            >
+              Guardar
+            </button>
+          </div>
         </div>
         <div className="flex justify-center h-96 p-4 border border-2 border-fluorescent-green">
           <Bar
-          className="pt-9"
-            data={data}
+            data={{
+              labels: ["IMC"],
+              datasets: [
+                {
+                  data: [imc],
+                  backgroundColor: [getIMCColor()],
+                  tension: 0.5,
+                  fill: true,
+                  borderColor: "rgba(255, 99, 132)",
+                  pointRadius: 5,
+                  pointBorderColor: "rgba(255, 99, 132)",
+                  pointBackgroundColor: "rgba(255, 99, 132)",
+                  borderWidth: 0.1,
+                  barThickness: 50,
+                },
+              ],
+            }}
             options={{
               plugins: {
                 legend: {
@@ -110,13 +96,14 @@ export default function ImcGraphics() {
               },
               scales: {
                 y: {
+                
                   beginAtZero: true,
                 },
               },
             }}
           />
-          </div>
-          </div>
-        </>
-);
+        </div>
+      </div>
+    </>
+  );
 }
