@@ -34,7 +34,7 @@ export default function ImcGraphics() {
   };
 
   const handleSave = () => {
-    // Aquí puedes implementar la lógica para guardar el IMC
+    
     console.log("IMC guardado:", imc);
   };
 
