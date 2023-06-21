@@ -1,6 +1,6 @@
 const UserCard = ({ name, imgUrl }) => {
   return (
-    <div className="flex flex-row">
+    <div className="flex">
       <div>
         <img
           className="rounded-full h-24 w-24 "
