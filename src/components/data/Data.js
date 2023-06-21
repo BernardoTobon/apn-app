@@ -34,7 +34,7 @@ const AvatarComponent = ({ Gender }) => {
 };
 
 const Data = () => {
-  const [Gender, setGender] = useState("hombre");
+  const [Gender, setGender] = useState("");
   const handleOfChange = (event) => {
     setGender(event.target.value);
   };
