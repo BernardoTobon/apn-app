@@ -2,6 +2,7 @@ import Accordion from "./Accordion";
 import Data from "./data/Data";
 import Goals from "./data/Goals";
 import LifeStyle from "./data/LifeStyle";
+import Perimeters from "./data/Perimeters";
 import UserHistory from "./data/UserHistory";
 
 const NewUser = () => {
@@ -12,26 +13,31 @@ const NewUser = () => {
       </h1>
       <div className="flex justify-center">
         <div className="flex flex-col">
-            <div className="m-2">
+          <div className="m-2">
             <Accordion>
-            <Data />
-          </Accordion>
-            </div>
-         <div className="m-2">
-         <Accordion>
-            <UserHistory/>
-          </Accordion>
-         </div>
-         <div className="m-2">
-         <Accordion>
-            <LifeStyle/>
-          </Accordion>
-         </div>
-         <div className="m-2">
-         <Accordion>
-            <Goals/>
-          </Accordion>
-         </div>
+              <Data />
+            </Accordion>
+          </div>
+          <div className="m-2">
+            <Accordion>
+              <UserHistory />
+            </Accordion>
+          </div>
+          <div className="m-2">
+            <Accordion>
+              <LifeStyle />
+            </Accordion>
+          </div>
+          <div className="m-2">
+            <Accordion>
+              <Goals />
+            </Accordion>
+          </div>
+          <div className="m-2">
+            <Accordion>
+              <Perimeters />
+            </Accordion>
+          </div>
         </div>
       </div>
     </>
